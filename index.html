@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Datum Consulting — CAD Workflow, PLM & AI Engineering Consulting</title>
+  <meta name="description" content="Datum Consulting helps engineering teams improve CAD workflows, migrate from CATIA V5 to 3DEXPERIENCE, organize engineering data and bring AI tools like Claude and Copilot into daily design work.">
+  <meta property="og:title" content="Datum Consulting — Engineering workflows, measured from a solid reference">
+  <meta property="og:description" content="CAD workflow audits, 3DEXPERIENCE migration, engineering data management and AI integration for design teams.">
+  <meta property="og:image" content="assets/brand-wallpaper.jpg">
+  <meta name="theme-color" content="#0B1F33">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header" id="top">
+    <div class="container nav">
+      <a href="#top" class="brand" aria-label="Datum Consulting home">
+        <svg class="brand-logo" viewBox="0 0 184 46" aria-hidden="true">
+          <rect x="1.5" y="1.5" width="181" height="30" fill="none" stroke="currentColor" stroke-width="2"/>
+          <g stroke="currentColor" stroke-width="2">
+            <line x1="31.5" y1="1.5" x2="31.5" y2="31.5"/><line x1="61.5" y1="1.5" x2="61.5" y2="31.5"/>
+            <line x1="91.5" y1="1.5" x2="91.5" y2="31.5"/><line x1="121.5" y1="1.5" x2="121.5" y2="31.5"/>
+            <line x1="151.5" y1="1.5" x2="151.5" y2="31.5"/>
+          </g>
+          <g stroke="#00C2FF" stroke-width="2" fill="none">
+            <circle cx="16.5" cy="16.5" r="7"/><line x1="6" y1="16.5" x2="27" y2="16.5"/><line x1="16.5" y1="6" x2="16.5" y2="27"/>
+          </g>
+          <g font-family="Montserrat, sans-serif" font-weight="800" font-size="18" fill="currentColor" text-anchor="middle">
+            <text x="46.5" y="23">D</text><text x="76.5" y="23">A</text><text x="106.5" y="23">T</text><text x="136.5" y="23">U</text><text x="167" y="23">M</text>
+          </g>
+          <text x="92" y="44" font-family="Montserrat, sans-serif" font-weight="600" font-size="9" fill="currentColor" text-anchor="middle" letter-spacing="6">CONSULTING</text>
+        </svg>
+      </a>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-links" aria-label="Main">
+        <a href="#services">Services</a>
+        <a href="#process">Process</a>
+        <a href="#engage">Engagements</a>
+        <a href="#expertise">Expertise</a>
+        <a href="#videos">Videos</a>
+        <a href="#about">About</a>
+        <a href="#contact" class="btn btn-small">Get in touch</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="grid-bg" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <div class="hero-text reveal">
+          <p class="eyebrow">CAD · PLM · AI for engineering teams</p>
+          <h1>Engineering workflows, measured from a <span class="accent">solid reference.</span></h1>
+          <p class="lead">
+            Datum Consulting helps design teams work faster and cleaner. We audit how your team models,
+            manages and releases CAD data, migrate you to modern platforms like 3DEXPERIENCE, and bring
+            AI tools such as Claude and Copilot into everyday engineering work.
+          </p>
+          <div class="hero-cta">
+            <a href="#audit" class="btn">Book a workflow audit</a>
+            <a href="#services" class="btn btn-ghost">See all services</a>
+          </div>
+          <ul class="hero-facts">
+            <li><strong>6+</strong><span>CAD platforms</span></li>
+            <li><strong>Automotive</strong><span>production experience</span></li>
+            <li><strong>GD&amp;T</strong><span>driven design</span></li>
+          </ul>
+        </div>
+
+        <!-- Hero illustration: isometric part with datum + feature control frame -->
+        <div class="hero-art reveal" aria-hidden="true">
+          <svg viewBox="0 0 460 400">
+            <defs>
+              <linearGradient id="faceTop" x1="0" x2="1"><stop offset="0" stop-color="#1B4368"/><stop offset="1" stop-color="#16395A"/></linearGradient>
+              <linearGradient id="faceL" x1="0" x2="1"><stop offset="0" stop-color="#112C47"/><stop offset="1" stop-color="#14344F"/></linearGradient>
+            </defs>
+            <!-- part -->
+            <polygon points="230,70 390,150 230,230 70,150" fill="url(#faceTop)" stroke="#9FDFFF" stroke-width="1.5"/>
+            <polygon points="70,150 230,230 230,320 70,240" fill="url(#faceL)" stroke="#9FDFFF" stroke-width="1.5"/>
+            <polygon points="230,230 390,150 390,240 230,320" fill="#0F2740" stroke="#9FDFFF" stroke-width="1.5"/>
+            <!-- holes -->
+            <ellipse cx="190" cy="140" rx="22" ry="11" fill="#0B1F33" stroke="#00C2FF" stroke-width="1.5"/>
+            <ellipse cx="270" cy="160" rx="22" ry="11" fill="#0B1F33" stroke="#00C2FF" stroke-width="1.5"/>
+            <!-- centerlines -->
+            <g stroke="#00C2FF" stroke-width="1" stroke-dasharray="6 4" opacity=".7">
+              <line x1="160" y1="140" x2="220" y2="140"/><line x1="240" y1="160" x2="300" y2="160"/>
+            </g>
+            <!-- dimension line -->
+            <g stroke="#FFFFFF" stroke-width="1" opacity=".85">
+              <line x1="70" y1="240" x2="40" y2="255"/><line x1="230" y1="320" x2="200" y2="335"/>
+              <line x1="48" y1="251" x2="208" y2="331"/>
+            </g>
+            <text x="112" y="310" fill="#FFFFFF" font-family="Inter, sans-serif" font-size="13" transform="rotate(26.5 112 310)">120.0 ±0.1</text>
+            <!-- datum A -->
+            <g>
+              <line x1="390" y1="200" x2="428" y2="200" stroke="#FFFFFF" stroke-width="1.2"/>
+              <polygon points="390,200 402,193 402,207" fill="#00C2FF"/>
+              <rect x="428" y="186" width="28" height="28" fill="#0B1F33" stroke="#FFFFFF" stroke-width="1.5"/>
+              <text x="442" y="206" fill="#FFFFFF" font-family="Montserrat, sans-serif" font-weight="800" font-size="16" text-anchor="middle">A</text>
+            </g>
+            <!-- feature control frame -->
+            <g transform="translate(250,40)">
+              <line x1="-20" y1="30" x2="-40" y2="95" stroke="#FFFFFF" stroke-width="1"/>
+              <rect x="0" y="0" width="176" height="30" fill="#0B1F33" stroke="#FFFFFF" stroke-width="1.5"/>
+              <line x1="32" y1="0" x2="32" y2="30" stroke="#FFFFFF" stroke-width="1.5"/>
+              <line x1="112" y1="0" x2="112" y2="30" stroke="#FFFFFF" stroke-width="1.5"/>
+              <line x1="144" y1="0" x2="144" y2="30" stroke="#FFFFFF" stroke-width="1.5"/>
+              <g stroke="#00C2FF" stroke-width="1.6" fill="none"><circle cx="16" cy="15" r="7"/><line x1="6" y1="15" x2="26" y2="15"/><line x1="16" y1="5" x2="16" y2="25"/></g>
+              <text x="72" y="20" fill="#FFFFFF" font-family="Inter, sans-serif" font-size="13" text-anchor="middle">⌀0.05 Ⓜ</text>
+              <text x="128" y="21" fill="#FFFFFF" font-family="Montserrat, sans-serif" font-weight="800" font-size="14" text-anchor="middle">A</text>
+              <text x="160" y="21" fill="#FFFFFF" font-family="Montserrat, sans-serif" font-weight="800" font-size="14" text-anchor="middle">B</text>
+              <line x1="-20" y1="30" x2="0" y2="15" stroke="#FFFFFF" stroke-width="1"/>
+            </g>
+            <!-- axis triad -->
+            <g transform="translate(60,360)" stroke-width="2">
+              <line x1="0" y1="0" x2="34" y2="-17" stroke="#FF5C7A"/><line x1="0" y1="0" x2="0" y2="-38" stroke="#5CFF9D"/><line x1="0" y1="0" x2="-34" y2="-17" stroke="#00C2FF"/>
+            </g>
+            <!-- AI node accent -->
+            <g opacity=".9">
+              <line x1="390" y1="150" x2="420" y2="110" stroke="#00C2FF" stroke-width="1"/>
+              <line x1="420" y1="110" x2="440" y2="130" stroke="#00C2FF" stroke-width="1"/>
+              <line x1="420" y1="110" x2="410" y2="80" stroke="#00C2FF" stroke-width="1"/>
+              <circle cx="420" cy="110" r="4" fill="#00C2FF"/><circle cx="440" cy="130" r="3" fill="#00C2FF"/><circle cx="410" cy="80" r="3" fill="#00C2FF"/>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROBLEMS ============ -->
+    <section class="section problems">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Sound familiar?</p>
+          <h2>Most engineering teams lose hours every week to the same problems</h2>
+        </div>
+        <div class="problem-grid">
+          <div class="problem reveal"><span class="x">✕</span><p>Models that break every time someone changes an early feature</p></div>
+          <div class="problem reveal"><span class="x">✕</span><p>Files named <em>final_v3_REAL.CATPart</em> and nobody knows which revision was released</p></div>
+          <div class="problem reveal"><span class="x">✕</span><p>A 3DEXPERIENCE migration that keeps getting postponed because nobody owns it</p></div>
+          <div class="problem reveal"><span class="x">✕</span><p>New engineers who need months to learn "how we do things here"</p></div>
+          <div class="problem reveal"><span class="x">✕</span><p>Repetitive CAD tasks done by hand that a script or AI assistant could do in seconds</p></div>
+          <div class="problem reveal"><span class="x">✕</span><p>Drawings and GD&amp;T that manufacturing and suppliers keep questioning</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SERVICES ============ -->
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Services</p>
+          <h2>What we offer</h2>
+          <p class="section-lead">Six focused services. Start with an audit, or pick the one that solves your most pressing problem.</p>
+        </div>
+        <div class="card-grid">
+          <article class="card reveal featured">
+            <div class="card-icon"><svg viewBox="0 0 48 48"><circle cx="21" cy="21" r="12"/><line x1="30" y1="30" x2="42" y2="42"/><line x1="15" y1="21" x2="27" y2="21"/><line x1="21" y1="15" x2="21" y2="27"/></svg></div>
+            <span class="tag">Start here</span>
+            <h3>CAD Workflow Audit</h3>
+            <p>A structured review of how your team models, names, stores and releases data. You get a clear report with findings, quick wins and a prioritized improvement roadmap.</p>
+            <a href="#audit" class="card-link">What's included →</a>
+          </article>
+          <article class="card reveal">
+            <div class="card-icon"><svg viewBox="0 0 48 48"><rect x="4" y="12" width="16" height="24" rx="2"/><rect x="28" y="12" width="16" height="24" rx="2"/><polyline points="20,24 28,24"/><polyline points="24,20 28,24 24,28"/></svg></div>
+            <h3>CATIA V5 → 3DEXPERIENCE Migration</h3>
+            <p>Planning and execution support for moving to CATIA V6 / 3DEXPERIENCE: data readiness, methodology, templates, pilot projects and user training.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card-icon"><svg viewBox="0 0 48 48"><ellipse cx="24" cy="10" rx="16" ry="5"/><path d="M8 10v28c0 3 7 5 16 5s16-2 16-5V10"/><path d="M8 24c0 3 7 5 16 5s16-2 16-5"/></svg></div>
+            <h3>Engineering Data Management</h3>
+            <p>Naming conventions, folder and PDM/PLM structures, revision and release rules. Clean data that everyone can find, trust and reuse.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card-icon"><svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="5"/><circle cx="8" cy="10" r="3"/><circle cx="40" cy="10" r="3"/><circle cx="8" cy="38" r="3"/><circle cx="40" cy="38" r="3"/><line x1="10" y1="12" x2="20" y2="21"/><line x1="38" y1="12" x2="28" y2="21"/><line x1="10" y1="36" x2="20" y2="27"/><line x1="38" y1="36" x2="28" y2="27"/></svg></div>
+            <h3>AI Integration for Engineering</h3>
+            <p>Practical use of Claude, Copilot and custom scripts in daily design work: CAD macros, automation, documentation, DFM checklists and knowledge search.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card-icon"><svg viewBox="0 0 48 48"><circle cx="16" cy="16" r="6"/><circle cx="34" cy="18" r="5"/><path d="M4 40c0-7 5-12 12-12s12 5 12 12"/><path d="M28 40c0-5 3-9 7-10 5 0 9 4 9 10"/></svg></div>
+            <h3>Team Training &amp; Onboarding</h3>
+            <p>Tailored training for CATIA, SolidWorks, Fusion 360 and more, plus onboarding programs and design guidelines so new engineers become productive faster.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card-icon"><svg viewBox="0 0 48 48"><polygon points="6,40 20,8 34,40"/><line x1="12" y1="28" x2="28" y2="28"/><rect x="30" y="30" width="14" height="10"/></svg></div>
+            <h3>Design Review &amp; GD&amp;T Support</h3>
+            <p>Independent review of parts, assemblies and drawings for plastics, die casting, sheet metal and composites, with a focus on manufacturability and tolerancing.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ AUDIT FEATURE ============ -->
+    <section class="section audit" id="audit">
+      <div class="container split">
+        <div class="reveal">
+          <p class="eyebrow">Featured service</p>
+          <h2>The CAD Workflow Audit</h2>
+          <p class="section-lead">
+            Every improvement needs a reference point. The audit gives you one: an honest,
+            outside view of how your engineering team really works today, and what to fix first.
+          </p>
+          <ul class="checklist">
+            <li>Interviews with designers, team leads and data managers</li>
+            <li>Review of sample parts, assemblies, drawings and templates</li>
+            <li>Analysis of naming, storage, revision and release practices</li>
+            <li>Check of tools, licenses, automation and AI opportunities</li>
+            <li>Written report with findings and a prioritized roadmap</li>
+            <li>Presentation session with your management and team</li>
+          </ul>
+          <p class="note">Fixed scope, fixed price. Delivered on-site in Cluj-Napoca or remotely anywhere in Europe.</p>
+          <a href="#contact" class="btn">Request an audit</a>
+        </div>
+        <div class="report reveal" aria-hidden="true">
+          <div class="report-head">
+            <span>Workflow Audit Report</span><span class="pill">Summary</span>
+          </div>
+          <div class="score">
+            <div class="score-row"><span>Modeling methodology</span><div class="bar"><i style="width:62%"></i></div><b>62</b></div>
+            <div class="score-row"><span>Data management</span><div class="bar"><i style="width:41%"></i></div><b>41</b></div>
+            <div class="score-row"><span>Drawings &amp; GD&amp;T</span><div class="bar"><i style="width:74%"></i></div><b>74</b></div>
+            <div class="score-row"><span>Automation &amp; AI</span><div class="bar"><i style="width:23%"></i></div><b>23</b></div>
+            <div class="score-row"><span>Onboarding</span><div class="bar"><i style="width:55%"></i></div><b>55</b></div>
+          </div>
+          <div class="report-list">
+            <p class="rl-title">Top 3 quick wins</p>
+            <p><span class="dot"></span>Introduce a shared naming convention</p>
+            <p><span class="dot"></span>Standard start parts &amp; drawing templates</p>
+            <p><span class="dot"></span>Automate BOM export with a macro</p>
+          </div>
+          <p class="report-foot">Example report · illustrative values</p>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============ BEFORE / AFTER ============ -->
+    <section class="section" id="results">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">What changes</p>
+          <h2>From "it works, somehow" to a workflow you can trust</h2>
+          <p class="section-lead">A typical example of the difference clean methodology and data rules make.</p>
+        </div>
+        <div class="ba-grid">
+          <div class="ba reveal">
+            <div class="ba-head bad">Before</div>
+            <ul class="tree">
+              <li>📁 Bracket_new</li>
+              <li class="t1">📄 bracket_final.CATPart</li>
+              <li class="t1">📄 bracket_final_v2.CATPart</li>
+              <li class="t1">📄 bracket_final_v2_JM_changes.CATPart</li>
+              <li class="t1">📄 COPY OF bracket_REAL.CATPart</li>
+              <li class="t1 warn">⚠ 14 broken links · 3 unknown revisions</li>
+            </ul>
+            <ul class="ba-stats">
+              <li><b>~25 min</b> to find the released version</li>
+              <li><b>Manual</b> BOM and drawing updates</li>
+            </ul>
+          </div>
+          <div class="ba reveal">
+            <div class="ba-head good">After</div>
+            <ul class="tree">
+              <li>📁 P-10245 Bracket Assembly</li>
+              <li class="t1">📄 P-10245-001_Bracket <span class="rev">Rev B · Released</span></li>
+              <li class="t1">📄 P-10245-002_Insert <span class="rev">Rev A · Released</span></li>
+              <li class="t1">📐 P-10245-001_DRW <span class="rev">Rev B</span></li>
+              <li class="t1">⚙ Start part &amp; template v3</li>
+              <li class="t1 ok">✓ 0 broken links · full revision history</li>
+            </ul>
+            <ul class="ba-stats">
+              <li><b>Seconds</b> to find any released part</li>
+              <li><b>Automated</b> BOM export with an AI-written macro</li>
+            </ul>
+          </div>
+        </div>
+        <p class="ba-foot reveal">Illustrative example. Every audit shows your own numbers.</p>
+      </div>
+    </section>
+
+    <!-- ============ PROCESS ============ -->
+    <section class="section" id="process">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">How we work</p>
+          <h2>A process built like a good drawing</h2>
+          <p class="section-lead">Clear references, clear tolerances, verified results.</p>
+        </div>
+        <ol class="steps">
+          <li class="step reveal">
+            <span class="step-num">A</span>
+            <h3>Establish the datum</h3>
+            <p>We map your current workflows, tools and pain points. A free intro call, then the audit if it's a fit.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step-num">B</span>
+            <h3>Define the tolerances</h3>
+            <p>Together we set goals, priorities and measurable targets: time saved, error rates, migration milestones.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step-num">C</span>
+            <h3>Implement</h3>
+            <p>Hands-on work with your team: methodology, templates, data structures, scripts, AI tools and training.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step-num">✓</span>
+            <h3>Verify &amp; hand over</h3>
+            <p>We check results against the targets, document everything and make sure your team owns the new way of working.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+
+    <!-- ============ ENGAGEMENTS ============ -->
+    <section class="section engage" id="engage">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Ways to work together</p>
+          <h2>Pick the engagement that fits your team</h2>
+        </div>
+        <div class="plan-grid">
+          <div class="plan reveal">
+            <h3>Workflow Audit</h3>
+            <p class="plan-sub">Fixed scope · 1–2 weeks</p>
+            <ul>
+              <li>Current-state review</li>
+              <li>Written report &amp; roadmap</li>
+              <li>Results presentation</li>
+            </ul>
+            <a href="#contact" class="btn btn-ghost">Ask for a quote</a>
+          </div>
+          <div class="plan featured reveal">
+            <span class="tag">Most common</span>
+            <h3>Improvement Project</h3>
+            <p class="plan-sub">Defined goal · weeks to months</p>
+            <ul>
+              <li>3DEXPERIENCE migration or PDM setup</li>
+              <li>Templates, standards &amp; automation</li>
+              <li>Training and handover</li>
+            </ul>
+            <a href="#contact" class="btn">Discuss your project</a>
+          </div>
+          <div class="plan reveal">
+            <h3>Advisory Retainer</h3>
+            <p class="plan-sub">Monthly · flexible hours</p>
+            <ul>
+              <li>On-call expert for your team</li>
+              <li>Design &amp; GD&amp;T reviews</li>
+              <li>Ongoing AI &amp; tooling support</li>
+            </ul>
+            <a href="#contact" class="btn btn-ghost">Ask for a quote</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ STACK / EXPERTISE ============ -->
+    <section class="section expertise" id="expertise">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Expertise</p>
+          <h2>Tools we know deeply, and the parts we've actually built</h2>
+        </div>
+        <div class="split split-top">
+          <div class="reveal">
+            <h3 class="sub">Software &amp; platforms</h3>
+            <ul class="chips">
+              <li>CATIA V5</li><li>CATIA V6</li><li>3DEXPERIENCE</li><li>SolidWorks</li><li>Fusion 360</li>
+              <li>Autodesk Inventor</li><li>AutoCAD</li><li>PDM / PLM systems</li>
+              <li class="chip-ai">Claude</li><li class="chip-ai">GitHub Copilot</li><li class="chip-ai">Python</li><li class="chip-ai">C# / .NET</li>
+            </ul>
+          </div>
+          <div class="reveal">
+            <h3 class="sub">Engineering domains</h3>
+            <ul class="domains">
+              <li><b>Plastic injection molding</b><span>Automotive interior &amp; exterior parts, draft, ribs, bosses, tooling constraints</span></li>
+              <li><b>Die casting</b><span>Wall thickness, parting lines, machining allowances</span></li>
+              <li><b>Sheet metal</b><span>Flanges, bends, flat patterns, forming limits</span></li>
+              <li><b>Composites &amp; additive</b><span>CFRP, continuous-fiber 3D printing, embedded sensing</span></li>
+              <li><b>GD&amp;T &amp; KPCs</b><span>Datum strategies, tolerance stacks, key product characteristics</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="audience reveal">
+          <h3 class="sub">Who we work with</h3>
+          <div class="audience-grid">
+            <div><span class="aud-icon">🚀</span><b>Startups</b><p>Setting up CAD, data and release processes the right way from day one.</p></div>
+            <div><span class="aud-icon">🏭</span><b>Suppliers &amp; manufacturers</b><p>Tier-1 to tier-3 suppliers facing OEM requirements and platform migrations.</p></div>
+            <div><span class="aud-icon">📐</span><b>Engineering service teams</b><p>Growing design teams that need consistency, speed and better onboarding.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ VIDEOS ============ -->
+    <section class="section" id="videos">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Free tutorials</p>
+          <h2>Learn with us on YouTube</h2>
+          <p class="section-lead">Practical CAD, data management and AI tips from real projects. New videos regularly.</p>
+        </div>
+        <div class="video-grid">
+          <a class="video reveal" href="https://www.youtube.com/@YOUR-CHANNEL" target="_blank" rel="noopener">
+            <div class="thumb t1"><span class="play"></span><span class="dur">12:40</span></div>
+            <h3>5 CATIA V5 habits that break your 3DEXPERIENCE migration</h3>
+            <p>Fix these before you move your data.</p>
+          </a>
+          <a class="video reveal" href="https://www.youtube.com/@YOUR-CHANNEL" target="_blank" rel="noopener">
+            <div class="thumb t2"><span class="play"></span><span class="dur">09:15</span></div>
+            <h3>Automating a CATIA task with AI in 10 minutes</h3>
+            <p>Using Claude to write a working CAD macro.</p>
+          </a>
+          <a class="video reveal" href="https://www.youtube.com/@YOUR-CHANNEL" target="_blank" rel="noopener">
+            <div class="thumb t3"><span class="play"></span><span class="dur">14:02</span></div>
+            <h3>A naming convention your whole team will actually follow</h3>
+            <p>Simple rules for clean engineering data.</p>
+          </a>
+        </div>
+        <div class="center reveal">
+          <a href="https://www.youtube.com/@YOUR-CHANNEL" class="btn btn-ghost" target="_blank" rel="noopener">Visit the channel</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section about" id="about">
+      <div class="container split">
+        <div class="portrait reveal" aria-hidden="true">
+          <!-- Replace with a real photo: <img src="assets/portrait.jpg" alt="Raducu, founder of Datum Consulting"> -->
+          <svg viewBox="0 0 300 340">
+            <rect x="10" y="10" width="280" height="320" fill="#13304D" stroke="#00C2FF" stroke-width="2"/>
+            <circle cx="150" cy="135" r="55" fill="#1B4368"/>
+            <path d="M60 330c0-60 40-100 90-100s90 40 90 100z" fill="#1B4368"/>
+            <polygon points="10,330 30,318 30,342" fill="#00C2FF"/>
+            <text x="150" y="315" fill="#9FDFFF" font-family="Inter, sans-serif" font-size="13" text-anchor="middle">Your photo here</text>
+          </svg>
+        </div>
+        <div class="reveal">
+          <p class="eyebrow">About</p>
+          <h2>Hi, I'm Raducu.</h2>
+          <p>
+            I'm a mechanical design engineer and team lead based in Cluj-Napoca, Romania. I've spent my
+            career designing production parts for the automotive industry, from plastic injection
+            molded components to die casting, sheet metal and composites, in CATIA and a range of other CAD platforms.
+          </p>
+          <p>
+            Leading a team of engineers taught me that most delays aren't caused by hard engineering
+            problems. They come from messy data, inconsistent methods and repetitive manual work.
+            That's what Datum Consulting fixes.
+          </p>
+          <p>
+            Alongside consulting, I'm pursuing a PhD in additive manufacturing and composites, and I
+            build my own engineering tools in Python and C#, so I bring both the designer's view and the
+            automation mindset.
+          </p>
+          <ul class="about-points">
+            <li>Automotive design experience, production-proven</li>
+            <li>Team leadership &amp; engineer onboarding</li>
+            <li>Custom CAD tools &amp; AI workflows</li>
+            <li>English &amp; Romanian</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="section" id="faq">
+      <div class="container narrow">
+        <div class="section-head reveal">
+          <p class="eyebrow">FAQ</p>
+          <h2>Common questions</h2>
+        </div>
+        <div class="faq reveal">
+          <details>
+            <summary>Do you work remotely or on-site?</summary>
+            <p>Both. On-site in Cluj-Napoca and the surrounding region, and remotely for clients across Europe. Audits usually combine a short on-site or video session with remote analysis.</p>
+          </details>
+          <details>
+            <summary>Do you sell software licenses?</summary>
+            <p>No. We're independent, so recommendations are based only on what's best for your team. We're happy to work alongside your existing software reseller.</p>
+          </details>
+          <details>
+            <summary>We're a small team. Is this for us?</summary>
+            <p>Yes. Small teams often benefit the most, because good methods and templates set up early save years of cleanup later. Engagements are scaled to your size.</p>
+          </details>
+          <details>
+            <summary>Is AI safe to use with our confidential CAD data?</summary>
+            <p>It can be, when it's set up correctly. We help you choose tools and configurations that respect your confidentiality and customer requirements, and define clear rules for what data goes where.</p>
+          </details>
+          <details>
+            <summary>How are projects priced?</summary>
+            <p>The workflow audit is a fixed-price package. Larger projects like migrations or training programs are quoted per project after the intro call, so you always know the cost upfront.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============ BRAND BANNER ============ -->
+    <section class="brand-banner reveal" aria-hidden="true">
+      <img src="assets/brand-wallpaper.jpg" alt="" loading="lazy">
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section contact" id="contact">
+      <div class="grid-bg" aria-hidden="true"></div>
+      <div class="container narrow center reveal">
+        <p class="eyebrow">Contact</p>
+        <h2>Let's find your datum.</h2>
+        <p class="section-lead">Tell us briefly about your team, the tools you use and what's slowing you down. We'll reply within one business day to set up a free 30-minute intro call.</p>
+        <a class="email" href="mailto:hello@yourdomain.com">hello@yourdomain.com</a>
+        <div class="socials">
+          <a href="https://www.linkedin.com/in/YOUR-PROFILE" target="_blank" rel="noopener">LinkedIn</a>
+          <span>·</span>
+          <a href="https://www.youtube.com/@YOUR-CHANNEL" target="_blank" rel="noopener">YouTube</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <b>Datum Consulting</b>
+        <p>CAD workflow, PLM &amp; AI engineering consulting · Cluj-Napoca, Romania</p>
+      </div>
+      <div class="legal">
+        <p>Datum Consulting is a brand of <b>[COMPANY NAME] SRL</b></p>
+        <p>CUI: [RO00000000] · Reg. Com.: [J12/0000/2020]</p>
+        <p>© <span id="year"></span> All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

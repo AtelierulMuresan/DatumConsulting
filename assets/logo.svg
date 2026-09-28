@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 184 46">
+  <rect x="1.5" y="1.5" width="181" height="30" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+  <g stroke="#FFFFFF" stroke-width="2"><line x1="31.5" y1="1.5" x2="31.5" y2="31.5"/><line x1="61.5" y1="1.5" x2="61.5" y2="31.5"/><line x1="91.5" y1="1.5" x2="91.5" y2="31.5"/><line x1="121.5" y1="1.5" x2="121.5" y2="31.5"/><line x1="151.5" y1="1.5" x2="151.5" y2="31.5"/></g>
+  <g stroke="#00C2FF" stroke-width="2" fill="none"><circle cx="16.5" cy="16.5" r="7"/><line x1="6" y1="16.5" x2="27" y2="16.5"/><line x1="16.5" y1="6" x2="16.5" y2="27"/></g>
+  <g font-family="Montserrat, Arial, sans-serif" font-weight="800" font-size="18" fill="#FFFFFF" text-anchor="middle"><text x="46.5" y="23">D</text><text x="76.5" y="23">A</text><text x="106.5" y="23">T</text><text x="136.5" y="23">U</text><text x="167" y="23">M</text></g>
+  <text x="92" y="44" font-family="Montserrat, Arial, sans-serif" font-weight="600" font-size="9" fill="#FFFFFF" text-anchor="middle" letter-spacing="6">CONSULTING</text>
+</svg>
