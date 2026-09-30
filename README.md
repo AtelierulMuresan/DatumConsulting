@@ -7,7 +7,6 @@ Static site (HTML/CSS/JS), ready for GitHub Pages.
 - `@YOUR-CHANNEL` → your YouTube handle (4 places)
 - `YOUR-PROFILE` → your LinkedIn profile
 - `[COMPANY NAME] SRL`, `CUI`, `Reg. Com.` in the footer
-- The "Your photo here" placeholder in the About section → `<img src="assets/portrait.jpg" alt="Raducu">`
 - Video cards → real video links (or YouTube embeds) once published
 
 ## Deploy on GitHub Pages
@@ -22,4 +21,5 @@ Static site (HTML/CSS/JS), ready for GitHub Pages.
 - `index.html`, `styles.css`, `script.js`
 - `assets/logo.svg` – vector logo (white, for dark backgrounds)
 - `assets/favicon.svg` – browser tab icon
+- `assets/portrait.jpg` – photo in the About section
 - `assets/brand-wallpaper.jpg` – brand image, also used as the link preview image
