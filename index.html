@@ -4,16 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Datum Consulting — CAD Workflow, PLM & AI Engineering Consulting</title>
-  <meta name="description" content="Datum Consulting helps engineering teams improve CAD workflows, migrate from CATIA V5 to 3DEXPERIENCE, organize engineering data and bring AI tools like Claude and Copilot into daily design work.">
+  <meta name="description" content="Datum Consulting helps engineering teams improve their CAD workflow, bring AI and automation into daily design work, and organize engineering data. 12 years of CAD, engineering and data management experience.">
   <meta property="og:title" content="Datum Consulting — Engineering workflows, measured from a solid reference">
-  <meta property="og:description" content="CAD workflow audits, 3DEXPERIENCE migration, engineering data management and AI integration for design teams.">
+  <meta property="og:description" content="CAD workflow optimization first, then AI integration &amp; automation and engineering data management for design teams.">
   <meta property="og:image" content="assets/brand-wallpaper.jpg">
   <meta name="theme-color" content="#0B1F33">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=6">
+  <link rel="stylesheet" href="styles.css?v=7">
 </head>
 <body>
 
@@ -58,21 +58,22 @@
       <div class="grid-bg" aria-hidden="true"></div>
       <div class="container hero-inner">
         <div class="hero-text reveal">
-          <p class="eyebrow">CAD · PLM · AI for engineering teams</p>
+          <p class="eyebrow">CAD workflow · AI &amp; automation · Data management</p>
           <h1>Engineering workflows, measured from a <span class="accent">solid reference.</span></h1>
           <p class="lead">
-            Datum Consulting helps design teams work faster and cleaner. We audit how your team models,
-            manages and releases CAD data, migrate you to modern platforms like 3DEXPERIENCE, and bring
-            AI tools such as Claude and Copilot into everyday engineering work.
+            Datum Consulting helps design teams work faster and cleaner. Our core focus is your CAD
+            workflow: how your team models, structures, documents and releases designs. On top of that we
+            bring AI tools such as Claude and Copilot and practical automation into everyday engineering
+            work, and organize the data behind it.
           </p>
           <div class="hero-cta">
             <a href="#audit" class="btn">Book a workflow audit</a>
             <a href="#services" class="btn btn-ghost">See all services</a>
           </div>
           <ul class="hero-facts">
+            <li><strong>12 years</strong><span>CAD, engineering &amp; data</span></li>
             <li><strong>6+</strong><span>CAD platforms</span></li>
-            <li><strong>Automotive</strong><span>production experience</span></li>
-            <li><strong>AI</strong><span>powered workflows</span></li>
+            <li><strong>Day one</strong><span>using AI in engineering</span></li>
           </ul>
         </div>
 
@@ -80,7 +81,11 @@
              Datum A = back face (side view), B = bottom edge, C = left edge (front view).
              Hole positions use basic dimensions from B and C; FCFs attached to the 2X hole size callout. -->
         <div class="hero-art reveal" aria-hidden="true">
-          <svg viewBox="0 0 460 345" font-family="Inter, Arial, sans-serif">
+          <svg viewBox="0 0 540 470" font-family="Inter, Arial, sans-serif">
+            <!-- DRAWING SHEET with border and title block (data management: part number, revision, release status) -->
+            <rect x="62" y="12" width="472" height="408" fill="#0F2740" stroke="#9FDFFF" stroke-opacity=".45"/>
+            <rect x="70" y="20" width="456" height="392" fill="none" stroke="#9FDFFF" stroke-opacity=".7" stroke-width="1.2"/>
+            <g transform="translate(78,30) scale(0.86)">
             <defs>
               <marker id="ah" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1.5 L10,5 L0,8.5z" fill="#FFFFFF"/></marker>
             </defs>
@@ -151,6 +156,49 @@
               <text x="56" y="34">&#8960;0.05</text>
               <text x="100" y="34" font-weight="700">A</text>
             </g>
+          </g>
+            <g font-size="8" fill="#8FA7BF">
+              <rect x="326" y="344" width="200" height="68" fill="#0B1F33" stroke="#9FDFFF" stroke-opacity=".7"/>
+              <path d="M326,366.7 H526 M326,389.3 H526 M372,344 V412 M476,344 V366.7" stroke="#9FDFFF" stroke-opacity=".7"/>
+              <text x="331" y="358">PART NO.</text><text x="331" y="381">TITLE</text><text x="331" y="404">STATUS</text><text x="481" y="353">REV</text>
+              <g fill="#FFFFFF" font-size="10" font-family="Consolas, Menlo, monospace">
+                <text x="377" y="359.5">P-10245-001</text><text x="377" y="382">MOUNTING PLATE</text>
+                <text x="377" y="405" fill="#00C2FF">RELEASED</text><text x="501" y="363" font-weight="700">B</text>
+              </g>
+              <text x="455" y="405">SCALE 1:2</text>
+            </g>
+
+            <!-- SPEC TREE panel (CAD workflow: clean, named feature tree) -->
+            <g font-family="Consolas, Menlo, monospace" font-size="9.5">
+              <rect x="2" y="300" width="186" height="164" rx="6" fill="#0B1F33" stroke="#00C2FF" stroke-width="1.2"/>
+              <text x="14" y="320" font-family="Inter, Arial, sans-serif" font-size="8.5" font-weight="700" letter-spacing="1.5" fill="#00C2FF">SPECIFICATION TREE</text>
+              <path d="M14,327 H176" stroke="#9FDFFF" stroke-opacity=".3"/>
+              <g fill="#D6E2EE">
+                <text x="14" y="344" fill="#FFFFFF" font-weight="700">P-10245-001</text>
+                <text x="26" y="361">Annotation Set.1</text>
+                <text x="26" y="378">Parameters</text>
+                <text x="26" y="395">PartBody</text>
+                <text x="40" y="412">Pad.1</text>
+                <text x="40" y="429">Hole.1</text><text x="88" y="429" fill="#8FA7BF">&#8960;8</text>
+                <text x="40" y="446">RectPattern.1</text><text x="130" y="446" fill="#8FA7BF">2X</text>
+              </g>
+              <g stroke="#9FDFFF" stroke-opacity=".45" fill="none">
+                <path d="M18,348 V392 M18,358 H24 M18,375 H24 M18,392 H24 M32,399 V443 M32,409 H38 M32,426 H38 M32,443 H38"/>
+              </g>
+            </g>
+
+            <!-- AI / AUTOMATION panel (scripted checks + export) -->
+            <g font-size="9.5">
+              <rect x="318" y="2" width="220" height="92" rx="6" fill="#0B1F33" stroke="#00C2FF" stroke-width="1.2"/>
+              <circle cx="331" cy="18" r="4" fill="#00C2FF"/>
+              <text x="341" y="21.5" font-size="8.5" font-weight="700" letter-spacing="1.5" fill="#00C2FF">AI &amp; AUTOMATION CHECK</text>
+              <path d="M328,29 H528" stroke="#9FDFFF" stroke-opacity=".3"/>
+              <g fill="#D6E2EE">
+                <text x="330" y="46"><tspan fill="#5CFF9D" font-weight="700">&#10003;</tspan>  Naming convention P-#####-###</text>
+                <text x="330" y="63"><tspan fill="#5CFF9D" font-weight="700">&#10003;</tspan>  All holes toleranced to A | B | C</text>
+                <text x="330" y="80"><tspan fill="#5CFF9D" font-weight="700">&#10003;</tspan>  BOM + PDF exported to PLM</text>
+              </g>
+            </g>
           </svg>
         </div>
       </div>
@@ -180,40 +228,50 @@
         <div class="section-head reveal">
           <p class="eyebrow">Services</p>
           <h2>What we offer</h2>
-          <p class="section-lead">Six focused services. Start with an audit, or pick the one that solves your most pressing problem.</p>
+          <p class="section-lead">Our core focus is the CAD workflow, followed by AI integration &amp; automation and engineering data management. Start with an audit, or pick what solves your most pressing problem.</p>
         </div>
-        <div class="card-grid">
-          <article class="card reveal">
+        <!-- core services, in priority order: 1 CAD workflow, 2 AI & automation, 3 data management -->
+        <div class="card-grid core-grid">
+          <article class="card card-main reveal">
             <div class="card-icon"><svg viewBox="0 0 48 48"><circle cx="21" cy="21" r="12"/><line x1="30" y1="30" x2="42" y2="42"/><line x1="15" y1="21" x2="27" y2="21"/><line x1="21" y1="15" x2="21" y2="27"/></svg></div>
-            <span class="tag">Start here</span>
-            <h3>CAD Workflow Audit</h3>
-            <p>A structured review of how your team models, names, stores and releases data. You get a clear report with findings, quick wins and a prioritized improvement roadmap.</p>
-            <a href="#audit" class="card-link">What's included →</a>
+            <span class="tag">Core focus</span>
+            <h3>CAD Workflow Optimization</h3>
+            <p>How your team models, structures, documents and releases designs. We audit the current workflow, then fix it: modeling methodology, start parts and templates, drawing standards and review steps.</p>
+            <ul class="card-points">
+              <li>CAD workflow audit with a prioritized roadmap</li>
+              <li>Robust modeling methods and templates</li>
+              <li>Drawing and release standards</li>
+            </ul>
+            <a href="#audit" class="card-link">Start with the workflow audit →</a>
           </article>
           <article class="card reveal">
-            <div class="card-icon"><svg viewBox="0 0 48 48"><rect x="4" y="12" width="16" height="24" rx="2"/><rect x="28" y="12" width="16" height="24" rx="2"/><polyline points="20,24 28,24"/><polyline points="24,20 28,24 24,28"/></svg></div>
-            <h3>CATIA V5 → 3DEXPERIENCE Migration</h3>
-            <p>Planning and execution support for moving to CATIA V6 / 3DEXPERIENCE: data readiness, methodology, templates, pilot projects and user training.</p>
+            <div class="card-icon"><svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="5"/><circle cx="8" cy="10" r="3"/><circle cx="40" cy="10" r="3"/><circle cx="8" cy="38" r="3"/><circle cx="40" cy="38" r="3"/><line x1="10" y1="12" x2="20" y2="21"/><line x1="38" y1="12" x2="28" y2="21"/><line x1="10" y1="36" x2="20" y2="27"/><line x1="38" y1="36" x2="28" y2="27"/></svg></div>
+            <h3>AI Integration &amp; Automation</h3>
+            <p>Practical use of Claude, Copilot and custom scripts in daily design work: CAD macros, automated checks and exports, documentation and knowledge search, set up safely for confidential data.</p>
           </article>
           <article class="card reveal">
             <div class="card-icon"><svg viewBox="0 0 48 48"><ellipse cx="24" cy="10" rx="16" ry="5"/><path d="M8 10v28c0 3 7 5 16 5s16-2 16-5V10"/><path d="M8 24c0 3 7 5 16 5s16-2 16-5"/></svg></div>
             <h3>Engineering Data Management</h3>
             <p>Naming conventions, folder and PDM/PLM structures, revision and release rules. Clean data that everyone can find, trust and reuse.</p>
           </article>
-          <article class="card reveal">
-            <div class="card-icon"><svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="5"/><circle cx="8" cy="10" r="3"/><circle cx="40" cy="10" r="3"/><circle cx="8" cy="38" r="3"/><circle cx="40" cy="38" r="3"/><line x1="10" y1="12" x2="20" y2="21"/><line x1="38" y1="12" x2="28" y2="21"/><line x1="10" y1="36" x2="20" y2="27"/><line x1="38" y1="36" x2="28" y2="27"/></svg></div>
-            <h3>AI Integration for Engineering</h3>
-            <p>Practical use of Claude, Copilot and custom scripts in daily design work: CAD macros, automation, documentation, DFM checklists and knowledge search.</p>
+        </div>
+
+        <h3 class="sub also-head reveal">Also available</h3>
+        <div class="card-grid also-grid">
+          <article class="card card-small reveal">
+            <div class="card-icon"><svg viewBox="0 0 48 48"><rect x="4" y="12" width="16" height="24" rx="2"/><rect x="28" y="12" width="16" height="24" rx="2"/><polyline points="20,24 28,24"/><polyline points="24,20 28,24 24,28"/></svg></div>
+            <h3>CATIA V5 → 3DEXPERIENCE Migration</h3>
+            <p>Data readiness, methodology, templates, pilot projects and user training for the move to CATIA V6 / 3DEXPERIENCE.</p>
           </article>
-          <article class="card reveal">
+          <article class="card card-small reveal">
             <div class="card-icon"><svg viewBox="0 0 48 48"><circle cx="16" cy="16" r="6"/><circle cx="34" cy="18" r="5"/><path d="M4 40c0-7 5-12 12-12s12 5 12 12"/><path d="M28 40c0-5 3-9 7-10 5 0 9 4 9 10"/></svg></div>
             <h3>Team Training &amp; Onboarding</h3>
-            <p>Tailored training for CATIA, SolidWorks, Fusion 360 and more, plus onboarding programs and design guidelines so new engineers become productive faster.</p>
+            <p>Tailored training for CATIA, SolidWorks, Fusion 360 and more, plus onboarding programs so new engineers become productive faster.</p>
           </article>
-          <article class="card reveal">
+          <article class="card card-small reveal">
             <div class="card-icon"><svg viewBox="0 0 48 48"><polygon points="6,40 20,8 34,40"/><line x1="12" y1="28" x2="28" y2="28"/><rect x="30" y="30" width="14" height="10"/></svg></div>
             <h3>Design Review &amp; DFM</h3>
-            <p>Independent review of parts, assemblies and drawings for plastics, die casting, sheet metal and composites, with a focus on manufacturability.</p>
+            <p>Independent review of parts, assemblies and drawings for plastics, die casting, sheet metal and composites, focused on manufacturability.</p>
           </article>
         </div>
       </div>
@@ -349,12 +407,12 @@
               <ul class="chips"><li>CATIA V5</li><li>CATIA V6</li><li>3DEXPERIENCE</li><li>SolidWorks</li><li>Fusion 360</li><li>Inventor</li><li>AutoCAD</li></ul>
             </div>
             <div class="mm-node">
-              <b>Data management</b>
-              <ul class="chips"><li>PDM / PLM systems</li><li>Naming &amp; release rules</li></ul>
-            </div>
-            <div class="mm-node">
               <b>AI &amp; automation</b>
               <ul class="chips"><li class="chip-ai">Claude</li><li class="chip-ai">GitHub Copilot</li><li class="chip-ai">Python</li><li class="chip-ai">C# / .NET</li></ul>
+            </div>
+            <div class="mm-node">
+              <b>Data management</b>
+              <ul class="chips"><li>PDM / PLM systems</li><li>Naming &amp; release rules</li></ul>
             </div>
           </div>
           <div class="mm-hub"><img src="assets/logo.svg" alt="Datum Consulting"></div>
@@ -419,8 +477,9 @@
           <p class="eyebrow">About</p>
           <h2>Hi, I'm Andrei.</h2>
           <p>
-            I'm a mechanical design engineer and team lead based in Cluj-Napoca, Romania. I've spent my
-            career designing production parts for the automotive industry, from plastic injection
+            I'm a mechanical design engineer and team lead based in Cluj-Napoca, Romania, with
+            <strong>12 years of experience in CAD, engineering, data management and automation</strong>.
+            I've spent that time designing production parts for the automotive industry, from plastic injection
             molded components to die casting, sheet metal and composites, in CATIA and a range of other CAD platforms.
           </p>
           <p>
@@ -429,14 +488,17 @@
             That's what Datum Consulting fixes.
           </p>
           <p>
-            Alongside consulting, I'm pursuing a PhD in additive manufacturing and composites, and I
-            build my own engineering tools in Python and C#, so I bring both the designer's view and the
-            automation mindset.
+            I've been using and integrating AI in engineering work since the first generative AI tools
+            appeared, and I build my own engineering tools in Python and C#. Alongside consulting, I'm
+            pursuing a PhD in additive manufacturing and composites, so I bring both the designer's view
+            and the automation mindset.
           </p>
           <ul class="about-points">
-            <li>Automotive design experience, production-proven</li>
+            <li>12 years in CAD, engineering &amp; data management</li>
+            <li>Using AI in engineering since day one</li>
+            <li>Automotive design, production-proven</li>
+            <li>Custom CAD tools &amp; automation</li>
             <li>Team leadership &amp; engineer onboarding</li>
-            <li>Custom CAD tools &amp; AI workflows</li>
             <li>English &amp; Romanian</li>
           </ul>
         </div>

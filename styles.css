@@ -139,6 +139,18 @@ p + p { margin-top: 1rem; }
 .card p { color: var(--muted); font-size: .96rem; }
 .card-icon { width: 54px; height: 54px; border: 1.5px solid var(--cyan); border-radius: 6px; display: grid; place-items: center; }
 .card-icon svg { width: 30px; height: 30px; fill: none; stroke: var(--cyan); stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; }
+/* service tiers: core row (CAD wider) + smaller "also available" row */
+.core-grid { grid-template-columns: 1.5fr 1fr 1fr; }
+.card-main h3 { font-size: 1.4rem; }
+.card-points { list-style: none; margin-top: 1rem; }
+.card-points li { position: relative; padding-left: 1.3rem; margin-bottom: .4rem; font-size: .93rem; color: var(--text); }
+.card-points li::before { content: ''; position: absolute; left: 0; top: .55em; width: 7px; height: 7px; background: var(--cyan); }
+.also-head { margin: 3rem 0 1.2rem; }
+.card-small { padding: 1.5rem 1.4rem; }
+.card-small .card-icon { width: 42px; height: 42px; }
+.card-small .card-icon svg { width: 24px; height: 24px; }
+.card-small h3 { font-size: 1.02rem; margin: .9rem 0 .5rem; }
+.card-small p { font-size: .9rem; }
 .card-link { display: inline-block; margin-top: 1rem; font-weight: 600; font-size: .95rem; }
 .tag { position: absolute; top: 1.6rem; right: 1.5rem; background: var(--cyan); color: var(--navy); font-size: .72rem; font-weight: 700; padding: .2rem .6rem; border-radius: 3px; text-transform: uppercase; letter-spacing: 1px; }
 
@@ -168,6 +180,9 @@ p + p { margin-top: 1rem; }
 /* steps */
 .steps { list-style: none; display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; counter-reset: s; }
 .step { position: relative; padding: 2rem 1.5rem; border-top: 2px solid var(--cyan); background: var(--navy-2); border-radius: 0 0 var(--radius) var(--radius); }
+/* flow arrows between the process steps */
+.steps { gap: 2.8rem; }
+.step:not(:last-child)::after { content: '→'; position: absolute; top: 50%; right: -2.25rem; transform: translateY(-50%); width: 1.7rem; height: 1.7rem; display: grid; place-items: center; border-radius: 50%; background: var(--cyan); color: var(--navy); font-weight: 800; font-size: 1rem; line-height: 1; box-shadow: 0 0 18px rgba(0,194,255,.45); }
 .step-num { display: grid; place-items: center; width: 44px; height: 44px; border: 2px solid var(--white); font-family: 'Montserrat', sans-serif; font-weight: 800; color: var(--white); margin-bottom: 1.2rem; }
 .step h3 { margin-bottom: .6rem; }
 .step p { color: var(--muted); font-size: .95rem; }
@@ -300,7 +315,9 @@ p + p { margin-top: 1rem; }
 /* ===== responsive ===== */
 @media (max-width: 1000px) {
   .card-grid, .problem-grid, .video-grid, .plan-grid { grid-template-columns: repeat(2, 1fr); }
-  .steps { grid-template-columns: repeat(2, 1fr); }
+  .steps { grid-template-columns: 1fr; max-width: 520px; margin: 0 auto; }
+  .step:not(:last-child)::after { top: auto; right: auto; bottom: -2.25rem; left: 50%; transform: translateX(-50%) rotate(90deg); }
+  .core-grid, .also-grid { grid-template-columns: 1fr; }
   .hero-inner, .split { grid-template-columns: 1fr; gap: 40px; }
   .hero-art { max-width: 480px; margin: 0 auto; }
 }
