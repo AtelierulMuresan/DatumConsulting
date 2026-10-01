@@ -43,6 +43,9 @@ if (mm) {
     });
   };
   new ResizeObserver(draw).observe(mm);
+  // redraw once fonts/images have loaded, since they shift the box positions
+  window.addEventListener('load', draw);
+  document.fonts?.ready.then(draw);
   nodes.forEach((n, i) => {
     n.addEventListener('mouseenter', () => svg.querySelector(`path[data-i="${i}"]`)?.classList.add('on'));
     n.addEventListener('mouseleave', () => svg.querySelector(`path[data-i="${i}"]`)?.classList.remove('on'));

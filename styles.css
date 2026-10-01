@@ -178,10 +178,14 @@ p + p { margin-top: 1rem; }
 /* mind map */
 .mindmap { position: relative; display: grid; grid-template-columns: 1fr 230px 1fr; gap: 90px; align-items: center; }
 .mm-lines { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; pointer-events: none; }
-.mm-lines path { fill: none; stroke: var(--cyan); stroke-opacity: .55; stroke-width: 1.6; stroke-dashoffset: var(--len); transition: stroke-opacity .25s, stroke-width .25s; }
+.mm-lines path { fill: none; stroke: var(--cyan); stroke-opacity: .55; stroke-width: 1.6; transition: stroke-opacity .25s, stroke-width .25s; }
 .mm-lines path.on { stroke-opacity: 1; stroke-width: 2.5; }
 .mm-lines circle { fill: var(--cyan); }
-.mindmap.visible .mm-lines path { animation: mm-draw 1.2s ease forwards; }
+/* draw-in animation only when the visitor allows motion; otherwise the lines are simply shown */
+@media (prefers-reduced-motion: no-preference) {
+  .mm-lines path { stroke-dashoffset: var(--len); }
+  .mindmap.visible .mm-lines path { animation: mm-draw 1.2s ease forwards; }
+}
 @keyframes mm-draw { from { stroke-dashoffset: var(--len); } to { stroke-dashoffset: 0; } }
 .mm-col { position: relative; display: flex; flex-direction: column; gap: 1.1rem; }
 .mm-label { font-family: 'Montserrat', sans-serif; font-size: .8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; color: var(--cyan-soft); }
@@ -196,7 +200,7 @@ p + p { margin-top: 1rem; }
 .mm-hub::after { content: ''; position: absolute; inset: -2px; border-radius: 50%; border: 2px solid var(--cyan); animation: mm-pulse 2.8s ease-out infinite; }
 @keyframes mm-pulse { from { transform: scale(1); opacity: .6; } to { transform: scale(1.35); opacity: 0; } }
 .mm-hub img { width: 100%; }
-@media (prefers-reduced-motion: reduce) { .mm-hub::after, .mindmap.visible .mm-lines path { animation: none; } }
+@media (prefers-reduced-motion: reduce) { .mm-hub::after { animation: none; } }
 .audience { margin-top: 4rem; }
 .audience-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
 .audience-grid > div { background: var(--navy); border: 1px solid var(--line); border-radius: var(--radius); padding: 1.6rem; }
