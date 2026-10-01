@@ -67,7 +67,7 @@ const RO = {
   k52: "Verificarea instrumentelor, licențelor și a oportunităților de automatizare și AI", // Check of tools, licenses, automation and AI opportunities
   k53: "Raport scris cu concluzii și o foaie de parcurs prioritizată", // Written report with findings and a prioritized roadmap
   k54: "Prezentarea rezultatelor pentru management și echipă", // Presentation session with your management and team
-  k55: "Scop și preț fixe. Livrat la sediul vostru în Cluj-Napoca sau de la distanță, oriunde în Europa.", // Fixed scope, fixed price. Delivered on-site in Cluj-Napoca o
+  k55: "Scop și preț fixe. Livrat la sediul vostru în Cluj-Napoca sau de la distanță, în toată Europa și în întreaga lume.", // Fixed scope, fixed price. Delivered on-site in Cluj-Napoca o
   k56: "Solicitați un audit", // Request an audit
   k57: "Raport audit flux de lucru", // Workflow Audit Report
   k58: "Rezumat", // Summary
@@ -157,7 +157,7 @@ const RO = {
   k150: "Întrebări", // FAQ
   k151: "Întrebări frecvente", // Common questions
   k152: "Lucrați de la distanță sau la sediul clientului?", // Do you work remotely or on-site?
-  k153: "Ambele. La sediul clientului în Cluj-Napoca și în împrejurimi, și de la distanță pentru clienți din toată Europa. Auditurile combină de obicei o scurtă sesiune la fața locului sau video cu o analiză de la distanță.", // Both. On-site in Cluj-Napoca and the surrounding region, and
+  k153: "Ambele. La sediul clientului în Cluj-Napoca și în împrejurimi, și de la distanță pentru clienți din toată Europa și din întreaga lume. Auditurile combină de obicei o scurtă sesiune la fața locului sau video cu o analiză de la distanță.", // Both. On-site in Cluj-Napoca and the surrounding region, and
   k154: "Vindeți licențe software?", // Do you sell software licenses?
   k155: "Nu. Suntem independenți, așa că recomandările se bazează doar pe ce este mai bine pentru echipa voastră. Colaborăm cu plăcere alături de distribuitorul vostru actual de software.", // No. We're independent, so recommendations are based only on 
   k156: "Suntem o echipă mică. Este pentru noi?", // We're a small team. Is this for us?
