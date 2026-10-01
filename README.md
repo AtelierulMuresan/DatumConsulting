@@ -6,7 +6,6 @@ Static site (HTML/CSS/JS), ready for GitHub Pages.
 - `hello@yourdomain.com` → your email
 - `@YOUR-CHANNEL` → your YouTube handle (4 places)
 - `YOUR-PROFILE` → your LinkedIn profile
-- `[COMPANY NAME] SRL`, `CUI`, `Reg. Com.` in the footer
 - Video cards → real video links (or YouTube embeds) once published
 
 ## Deploy on GitHub Pages
