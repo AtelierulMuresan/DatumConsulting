@@ -13,7 +13,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=7">
+  <link rel="stylesheet" href="styles.css?v=8">
 </head>
 <body>
 
@@ -442,8 +442,12 @@
         <div class="section-head reveal">
           <p class="eyebrow">Free tutorials</p>
           <h2>Learn with us on YouTube</h2>
-          <p class="section-lead">Practical CAD, data management and AI tips from real projects. New videos regularly.</p>
+          <p class="section-lead">Practical CAD workflow, AI &amp; automation and data management tips from real projects.</p>
         </div>
+        <!-- Work in progress: preview cards are blurred and not clickable until the channel launches.
+             To launch: remove the "wip" wrapper, the overlay div and the aria-hidden/inert attributes. -->
+        <div class="wip">
+          <div class="wip-content" aria-hidden="true" inert>
         <div class="video-grid">
           <a class="video reveal" href="https://www.youtube.com/@YOUR-CHANNEL" target="_blank" rel="noopener">
             <div class="thumb t1"><span class="play"></span><span class="dur">12:40</span></div>
@@ -463,6 +467,17 @@
         </div>
         <div class="center reveal">
           <a href="https://www.youtube.com/@YOUR-CHANNEL" class="btn btn-ghost" target="_blank" rel="noopener">Visit the channel</a>
+        </div>
+          </div>
+          <div class="wip-overlay">
+            <div class="wip-banner">
+              <span class="wip-stripes" aria-hidden="true"></span>
+              <p class="eyebrow">Work in progress</p>
+              <h3>YouTube channel coming soon</h3>
+              <p>Practical CAD workflow, AI &amp; automation and data management tutorials are on the way.</p>
+              <span class="wip-stripes" aria-hidden="true"></span>
+            </div>
+          </div>
         </div>
       </div>
     </section>

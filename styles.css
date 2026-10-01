@@ -241,6 +241,16 @@ p + p { margin-top: 1rem; }
 .video:hover .play { transform: scale(1.1); }
 .dur { position: absolute; right: 10px; bottom: 10px; background: rgba(0,0,0,.7); color: #fff; font-size: .75rem; padding: .1rem .45rem; border-radius: 3px; }
 
+/* videos: work-in-progress overlay */
+.wip { position: relative; }
+.wip-content { filter: blur(6px) saturate(.6); opacity: .55; pointer-events: none; user-select: none; }
+.wip-overlay { position: absolute; inset: 0; display: grid; place-items: center; padding: 1rem; }
+.wip-banner { max-width: 520px; text-align: center; background: rgba(11,31,51,.92); border: 2px solid var(--cyan); border-radius: var(--radius); padding: 0 2rem; overflow: hidden; box-shadow: 0 24px 60px rgba(0,0,0,.45), 0 0 40px rgba(0,194,255,.15); }
+.wip-banner .eyebrow { margin: 1.6rem 0 .5rem; }
+.wip-banner h3 { font-size: 1.5rem; margin-bottom: .6rem; }
+.wip-banner p:not(.eyebrow) { color: var(--muted); font-size: .95rem; margin: 0 0 1.6rem; }
+.wip-stripes { display: block; height: 10px; margin: 0 -2rem; background: repeating-linear-gradient(-45deg, var(--cyan) 0 12px, var(--navy) 12px 24px); }
+
 /* about */
 .portrait { position: relative; max-width: 380px; margin: 0 auto; }
 .portrait img { width: 100%; height: auto; border: 2px solid var(--cyan); border-radius: var(--radius); box-shadow: 16px 16px 0 -2px var(--navy-2), 16px 16px 0 0 var(--line); }
