@@ -175,6 +175,8 @@ const RO = {
   k168: "Sediu social: Str. Soporului nr. 8, Bl. A1, Sc. 3, Et. 6, Ap. 157, <span style=\"white-space:nowrap\">Cluj-Napoca</span>", // Registered office: Str. Soporului nr. 8, Bl. A1, Sc. 3, Et. 
   k169: "CUI: 40163031 · Nr. Reg. Com.: J12/5111/15.11.2018 · Capital social: 200 RON", // CUI: 40163031 · Reg. Com.: J12/5111/15.11.2018 · Share capit
   k170: "© <span id=\"year\"></span> Toate drepturile rezervate.", // © All rights reserved.
+  k171: "Managementul Proiectelor", // Project Management
+  k172: "Urmărirea Sarcinilor Și Lansărilor", // Task & Release Tracking
 };
 
 const META = {
