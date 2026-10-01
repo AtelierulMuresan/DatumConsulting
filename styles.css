@@ -267,6 +267,11 @@ p + p { margin-top: 1rem; }
 .plan-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; align-items: stretch; max-width: 860px; margin: 0 auto 2.5rem; }
 .plan { position: relative; display: flex; flex-direction: column; background: var(--navy-2); border: 1px solid var(--line); border-radius: var(--radius); padding: 2rem 1.7rem; }
 .plan.featured { border-color: var(--cyan); box-shadow: 0 0 0 1px var(--cyan) inset, 0 20px 50px rgba(0,194,255,.12); }
+/* hover: lift, cyan border + glow (two-class selector so it overrides the .reveal transition) */
+.plan.visible { transition: transform .25s, border-color .25s, box-shadow .25s, background .25s; }
+.plan:hover { transform: translateY(-6px); border-color: var(--cyan); background: var(--navy-3); box-shadow: 0 0 0 1px var(--cyan) inset, 0 24px 60px rgba(0,194,255,.22); }
+.plan .step-num { transition: background .25s, border-color .25s, color .25s; }
+.plan:hover .step-num { background: var(--cyan); border-color: var(--cyan); color: var(--navy); }
 .plan-sub { color: var(--cyan-soft); font-size: .88rem; margin: .4rem 0 1.2rem; }
 .plan ul { list-style: none; margin-bottom: 1.8rem; flex: 1; }
 .plan li { position: relative; padding-left: 1.4rem; margin-bottom: .55rem; font-size: .95rem; }
