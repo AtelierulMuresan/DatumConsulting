@@ -3,7 +3,6 @@
 Static site (HTML/CSS/JS), ready for GitHub Pages.
 
 ## Before publishing, replace these placeholders in index.html
-- `hello@yourdomain.com` → your email
 - `@YOUR-CHANNEL` → your YouTube handle (4 places)
 - `YOUR-PROFILE` → your LinkedIn profile
 - Video cards → real video links (or YouTube embeds) once published
