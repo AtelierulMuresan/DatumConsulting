@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://datumconsultancy.com/</loc>
+    <lastmod>2026-10-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://datumconsultancy.com/"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://datumconsultancy.com/ro/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datumconsultancy.com/"/>
+  </url>
+  <url>
+    <loc>https://datumconsultancy.com/ro/</loc>
+    <lastmod>2026-10-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://datumconsultancy.com/"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://datumconsultancy.com/ro/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datumconsultancy.com/"/>
+  </url>
+</urlset>

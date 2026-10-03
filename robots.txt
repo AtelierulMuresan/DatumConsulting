@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /start-server.bat
+
+Sitemap: https://datumconsultancy.com/sitemap.xml

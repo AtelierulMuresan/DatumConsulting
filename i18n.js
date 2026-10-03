@@ -1,15 +1,23 @@
-// Datum Consulting — English / Romanian language switch
+// Datum Consulting — Romanian translations (source file)
 //
-// English is written directly in index.html (default, and what search engines index).
-// Every translatable element has data-i18n="kNN"; the Romanian text for that key lives in RO below.
-// To change a Romanian text: edit its line here. To add a new text: give the element a new
-// data-i18n key in index.html and add the same key here.
+// NOT loaded by the website. build-ro.py reads this file and generates ro/index.html
+// (a fully Romanian, search-engine-readable copy of index.html).
 //
-// Language choice, in order:
-//   1. ?lang=ro or ?lang=en in the URL (handy for sharing a link in a specific language)
-//   2. the visitor's own choice from the flag switch (remembered in this browser)
-//   3. auto-detect: device time zone Europe/Bucharest (= in Romania) -> Romanian, otherwise English.
-//      No IP lookup / third-party service, so no cookies or GDPR consent are needed.
+// English text lives in index.html. Each translatable element there has data-i18n="kNN";
+// the Romanian text for that key is below (the comment shows the English for reference).
+// After changing index.html or this file, run:   python build-ro.py
+// Keep every value on ONE line as a JSON string (double quotes).
+
+const RO_META = {
+  title: "Consultanță CAD, CATIA și 3DEXPERIENCE, automatizare cu AI | Datum Consulting, Cluj-Napoca",
+  description: "Consultanță pentru fluxul de lucru CAD (CATIA V5, 3DEXPERIENCE, SolidWorks), automatizare cu AI și managementul datelor de inginerie. 12 ani de experiență, Cluj-Napoca, la sediul clientului sau de la distanță.",
+  ogTitle: "Datum Consulting — Fluxuri de lucru inginerești, măsurate față de o referință solidă",
+  ogDescription: "Optimizarea fluxului de lucru CAD, integrare AI și automatizare și managementul datelor pentru echipele de proiectare.",
+  menu: "Deschide meniul",
+  wa: "Scrieți-ne pe WhatsApp",
+  portrait: "Andrei, fondatorul Datum Consulting",
+  waText: "Bună ziua, Andrei! Aș dori să programez o discuție inițială.",
+};
 
 const RO = {
   k0: "Servicii", // Services
@@ -178,66 +186,3 @@ const RO = {
   k171: "Managementul Proiectelor", // Project Management
   k172: "Urmărirea Sarcinilor Și Lansărilor", // Task & Release Tracking
 };
-
-const META = {
-  en: {
-    title: document.title,
-    description: document.querySelector('meta[name="description"]').content,
-    menu: 'Open menu',
-    wa: 'Chat on WhatsApp',
-    portrait: 'Andrei, founder of Datum Consulting',
-    waText: "Hello Andrei, I'd like to book a discovery call.",
-  },
-  ro: {
-    title: 'Datum Consulting — Flux de lucru CAD, AI și automatizare, managementul datelor',
-    description: 'Datum Consulting ajută echipele de inginerie să își îmbunătățească fluxul de lucru CAD, să aducă AI și automatizarea în proiectarea de zi cu zi și să își organizeze datele. 12 ani de experiență în CAD, inginerie și managementul datelor.',
-    menu: 'Deschide meniul',
-    wa: 'Scrieți-ne pe WhatsApp',
-    portrait: 'Andrei, fondatorul Datum Consulting',
-    waText: 'Bună ziua, Andrei! Aș dori să programez o discuție inițială.',
-  },
-};
-
-const i18nEls = [...document.querySelectorAll('[data-i18n]')];
-i18nEls.forEach(el => { el.dataset.en = el.innerHTML; }); // keep the English original
-
-function setLang(lang) {
-  if (lang !== 'ro') lang = 'en';
-  i18nEls.forEach(el => {
-    const ro = RO[el.dataset.i18n];
-    el.innerHTML = lang === 'ro' && ro ? ro : el.dataset.en;
-  });
-  const m = META[lang];
-  document.documentElement.lang = lang;
-  document.title = m.title;
-  document.querySelector('meta[name="description"]').content = m.description;
-  document.querySelector('.nav-toggle')?.setAttribute('aria-label', m.menu);
-  document.querySelector('.wa-float')?.setAttribute('aria-label', m.wa);
-  document.querySelector('.portrait img')?.setAttribute('alt', m.portrait);
-  document.querySelectorAll('a[href^="https://wa.me/"]').forEach(a => {
-    a.href = 'https://wa.me/40743963758?text=' + encodeURIComponent(m.waText);
-  });
-  const year = document.getElementById('year');
-  if (year) year.textContent = new Date().getFullYear();
-  document.querySelectorAll('.lang-switch button').forEach(b => {
-    b.setAttribute('aria-pressed', b.dataset.lang === lang);
-  });
-  window.dispatchEvent(new Event('resize')); // let the mind map redraw its lines
-}
-
-function detectLang() {
-  const q = new URLSearchParams(location.search).get('lang');
-  if (q === 'ro' || q === 'en') return q;
-  try { const saved = localStorage.getItem('lang'); if (saved) return saved; } catch (e) {}
-  try {
-    if (Intl.DateTimeFormat().resolvedOptions().timeZone === 'Europe/Bucharest') return 'ro';
-  } catch (e) {}
-  return 'en';
-}
-
-document.querySelectorAll('.lang-switch button').forEach(b => b.addEventListener('click', () => {
-  try { localStorage.setItem('lang', b.dataset.lang); } catch (e) {}
-  setLang(b.dataset.lang);
-}));
-
-setLang(detectLang());

@@ -87,10 +87,10 @@ p + p { margin-top: 1rem; }
 .nav-toggle { order: 3; }
 /* language switch with flags */
 .lang-switch { display: flex; gap: 4px; padding: 3px; border: 1px solid var(--line); border-radius: 6px; }
-.lang-switch button { display: flex; align-items: center; gap: 6px; background: none; border: 0; border-radius: 4px; padding: 5px 8px; cursor: pointer; color: var(--muted); font: 600 .78rem 'Inter', sans-serif; opacity: .6; transition: opacity .2s, background .2s, color .2s; }
-.lang-switch button svg { width: 22px; height: 15px; border-radius: 2px; box-shadow: 0 0 0 1px rgba(255,255,255,.25); }
-.lang-switch button:hover { opacity: 1; }
-.lang-switch button[aria-pressed="true"] { opacity: 1; background: var(--navy-3); color: var(--white); }
+.lang-switch a { display: flex; align-items: center; gap: 6px; background: none; border: 0; border-radius: 4px; padding: 5px 8px; cursor: pointer; color: var(--muted); font: 600 .78rem 'Inter', sans-serif; opacity: .6; transition: opacity .2s, background .2s, color .2s; }
+.lang-switch a svg { width: 22px; height: 15px; border-radius: 2px; box-shadow: 0 0 0 1px rgba(255,255,255,.25); }
+.lang-switch a:hover { opacity: 1; }
+.lang-switch a[aria-current="true"] { opacity: 1; background: var(--navy-3); color: var(--white); }
 .nav-toggle { display: none; background: none; border: 0; cursor: pointer; padding: 8px; }
 .nav-toggle span { display: block; width: 24px; height: 2px; background: var(--white); margin: 5px 0; transition: .3s; }
 

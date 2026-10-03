@@ -7,13 +7,17 @@ Static site (HTML/CSS/JS), ready for GitHub Pages.
 - `YOUR-PROFILE` → your LinkedIn profile
 - Video cards → real video links (or YouTube embeds) once published
 
-## Languages (English / Romanian)
-- English text lives in `index.html`; Romanian text lives in `i18n.js` (one line per text, keyed `kNN`).
-- Each translatable element in `index.html` has `data-i18n="kNN"`. When you change an English text,
-  update the Romanian line with the same key in `i18n.js`. New texts need a new key in both files.
-- Language order: `?lang=ro` / `?lang=en` in the URL, then the visitor's flag choice (remembered),
-  then auto-detect (device time zone Europe/Bucharest = Romanian, otherwise English).
-- The technical drawing in the hero image stays in English on purpose (drawing convention).
+## Languages (English / Romanian) and SEO
+- Two real pages: `/` (English, `index.html`) and `/ro/` (Romanian, `ro/index.html`).
+- `ro/index.html` is GENERATED — never edit it by hand. Edit English in `index.html`,
+  Romanian in `i18n.js` (one line per text, keyed `kNN`, matching `data-i18n="kNN"`), then run:
+      python build-ro.py
+  and commit both files. The script stops with an error if a Romanian text is missing.
+- `lang.js` routes visitors: `?lang=ro|en` > remembered flag choice > first visit from a
+  Europe/Bucharest time zone goes to `/ro/`. Search-engine bots are never redirected.
+- SEO files: `sitemap.xml` (submit in Google Search Console), `robots.txt`, `404.html`.
+  Each page has canonical + hreflang tags and JSON-LD business data in the `<head>`.
+- The technical drawing in the hero stays in English on purpose (drawing convention).
 
 ## Deploy on GitHub Pages
 1. Create a repo and upload all files (keep the `assets` folder).
@@ -24,7 +28,8 @@ Static site (HTML/CSS/JS), ready for GitHub Pages.
 4. When DNS is live, tick "Enforce HTTPS".
 
 ## Files
-- `index.html`, `styles.css`, `script.js`, `i18n.js` (Romanian texts + language switch)
+- `index.html` (English), `ro/index.html` (Romanian, generated), `build-ro.py`, `i18n.js` (Romanian texts), `lang.js`, `styles.css`, `script.js`
+- `sitemap.xml`, `robots.txt`, `404.html`, `CNAME`
 - `assets/logo.svg` – vector logo (white, for dark backgrounds)
 - `assets/favicon.svg` – browser tab icon
 - `assets/portrait.jpg` – photo in the About section
